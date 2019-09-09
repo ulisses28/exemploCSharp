@@ -1,0 +1,35 @@
+using System;
+
+namespace projeto1_Caixa{
+    class MainClass{
+        public static void Main (string[] args){
+            Caixa cx = new Caixa();
+            double volumeCaixa;
+            volumeCaixa = cx.volume();
+
+            Console.WriteLine(volumeCaixa.ToString());
+
+        }
+    }
+}
+// classe caixa 
+
+using System;
+
+namespace projeto1_Caixa
+{
+    class Caixa
+    {
+        private double lado;
+
+        public Caixa(){
+            lado = 50;
+        }
+        public double volume(){
+            return lado * lado * lado;
+        }
+
+    }
+
+}
+// essa classe refere ao calculo de volume de uma caixa usando o metodo lado ao cubo
